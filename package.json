@@ -1,0 +1,28 @@
+{
+  "name": "brandonleichty-dot-com",
+  "version": "1.0.0",
+  "description": "My personal website. Currently built using plain html, vanilla JS, and Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonleichty/brandonleichty-dot-com.git"
+  },
+  "author": "Brandon Leichty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonleichty/brandonleichty-dot-com/issues"
+  },
+  "homepage": "https://github.com/brandonleichty/brandonleichty-dot-com#readme",
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.2.1",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "snowpack": "^3.1.2",
+    "tailwindcss": "^2.0.4"
+  }
+}
