@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script> 
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Web Resources | Brandon Leichty</title>
+  </head>
+  <body class="bg-extend-brand-favWhite dark:bg-extend-brand-navy px-8 py-12">
+    <div>
+      <header class="max-w-3xl mx-auto">
+        <div class="text-right">		
+          <button id="dark-mode-toggle" class="dark-mode-toggle">
+            <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><path id="svgToggle" fill="#8f8f8f" d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+              c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+              c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+              s76.47-9.802,110.065-29.407c33.585-19.602,60.183-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+              C438.533,179.485,428.732,142.795,409.133,109.203z M219.27,374.579c-28.171,0-54.152-6.943-77.943-20.844
+              c-23.789-13.895-42.633-32.743-56.527-56.527c-13.897-23.791-20.843-49.772-20.843-77.945c0-28.171,6.949-54.152,20.843-77.943
+              c13.891-23.791,32.738-42.637,56.527-56.531c23.791-13.894,49.772-20.841,77.943-20.841V374.579z"/></svg>
+          </button>
+        </div>
+      <a href="/"><img class="hero-image h-40 w-40 sm:h-80 sm:w-80 mx-auto" src="/images/JavaScriptMemoji.png" alt="memoji"/></a>
+      <h1 class="mt-5 sm:mt-5 mb-5 text-5xl sm:text-7xl font-custom font-extrabold text-extend-brand-favLightGray dark:text-extend-brand-favWhite text-center">
+        Resources
+      </h1>
+      <div class="mb-10 sm:mb-24">
+        <p class="text-lg sm:text-2xl text-center text-extend-brand-favDarkerGray">
+          I've spent the last five years diving into the world of full-stack JavaScript.
+          Below you'll find a list of some my favorite learning resources.
+        </p>
+      </div>
+    </header>
+      <div class="max-w-4xl mx-auto grid-container grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 gap-y-16 mt-16 text-center">
+        <div class="tutorialSites">
+          <h2 class="mb-3 text-2xl text-extend-brand-appleGreen font-medium">Tutorial Sites</h2>
+          <ul class="space-y-2 dark:text-extend-brand-favWhite">
+            <li><a href="https://www.leveluptutorials.com" target="_blank" rel="noopener noreferrer">LevelUp Tutorials</a></li>
+            <li><a href="https://wesbos.com" target="_blank" rel="noopener noreferrer">Wes Bos</a></li>
+            <li><a href="https://frontendmasters.com" target="_blank" rel="noopener noreferrer">FrontendMasters</a></li>
+            <li><a href="https://teamtreehouse.com" target="_blank" rel="noopener noreferrer">Treehouse</a></li>
+            <li><a href="https://watchandcode.com" target="_blank" rel="noopener noreferrer">Watch and Code</a></li>
+            <li><a href="https://egghead.io" target="_blank" rel="noopener noreferrer">egghead.io</a></li>
+          </ul>
+        </div>
+        <div class="youTubeChannels">
+          <h3 class=" mb-3  text-2xl text-extend-brand-appleYellow font-medium">YouTube Channels</h3>
+          <ul class="space-y-2 dark:text-extend-brand-favWhite">
+            <li><a href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA" target="_blank" rel="noopener noreferrer">fireship.io</a></li>
+            <li><a href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw" target="_blank" rel="noopener noreferrer">WebDev Simplified</a></li>
+            <li><a href="https://www.youtube.com/user/TechGuyWeb" target="_blank" rel="noopener noreferrer">Travesty Media</a></li>
+            <li><a href="https://www.youtube.com/channel/UCmXVXfidLZQkppLPaATcHag" target="_blank" rel="noopener noreferrer">Better Dev</a></li>
+            <li><a href="https://www.youtube.com/user/99baddawg" target="_blank" rel="noopener noreferrer">Ben Awad</a></li>
+            <li><a href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q" target="_blank" rel="noopener noreferrer">Dev Ed</a></li>
+          </ul>
+        </div>
+        <div class="designInspiration">
+          <h3 class="mb-3 text-2xl text-extend-brand-appleOrange font-medium">Design Inspiration</h3>
+          <ul class="space-y-2 dark:text-extend-brand-favWhite">
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribble</a></li>
+            <li><a href="https://klim.co.nz" target="_blank" rel="noopener noreferrer">Klim Type Foundry</a></li>
+            <li><a href="https://www.awwwards.com" target="_blank" rel="noopener noreferrer">Awwwards</a></li>
+          </ul>
+        </div>
+        <div class="otherResources">
+          <h3 class="mb-3 text-2xl text-extend-brand-appleRed font-medium">Other Resources</h3>
+          <ul class="space-y-2 dark:text-extend-brand-favWhite">
+            <li><a href="https://www.meetup.com/JavaScriptMN/" target="_blank" rel="noopener noreferrer">JavaScript MN Meetup</a></li>
+            <li><a href="https://javascriptweekly.com" target="_blank" rel="noopener noreferrer">JavaScript Weekly</a></li>
+            <li><a href="https://www.masterywithsql.com" target="_blank" rel="noopener noreferrer">Mastery with SQL</a></li>
+            <li><a href="https://weibenfalk.teachable.com/p/react-create-a-movie-app" target="_blank" rel="noopener noreferrer">Weibenfalk's<br>React Fundamentals</a></li>
+            <li><a href="https://www.joshwcomeau.com" target="_blank" rel="noopener noreferrer">Josh Comeau</a></li>
+            <li><a href="https://syntax.fm" target="_blank" rel="noopener noreferrer">syntax.fm</a></li>
+            <li><a href="https://whatthefuck.is" target="_blank" rel="noopener noreferrer">WTF.is</a></li>
+          </ul>
+        </div>
+        <div class="books">
+          <h3 class="mb-3 text-2xl text-extend-brand-applePurple font-medium">Books</h3>
+          <ul class="space-y-2 dark:text-extend-brand-favWhite">
+            <li><a href="https://eloquentjavascript.net" target="_blank" rel="noopener noreferrer">Eloquent JavaScript</a></li>
+            <li><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank" rel="noopener noreferrer">You Don't Know JS</a></li>
+            <li><a href="https://nostarch.com/oojs" target="_blank" rel="noopener noreferrer">The Principles of<br>Object-Oriented JavaScript</a></li>
+            <li><a href="https://nostarch.com/ecmascript6" target="_blank" rel="noopener noreferrer">Understanding ECMAScript 6</a></li>
+            <li><a href="https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052" target="_blank" rel="noopener noreferrer">The Pragmatic Programmer</a></li>
+            <li><a href="https://www.amazon.com/Think-Like-Programmer-Introduction-Creative/dp/1593274246" target="_blank" rel="noopener noreferrer">Think Like a Programmer</a></li>
+            <li><a href="https://www.amazon.com/Simplifying-JavaScript-Writing-Modern-Beyond/dp/1680502883" target="_blank" rel="noopener noreferrer">Simplifying JavaScript</a></li>
+            <li><a href="https://www.amazon.com/Effective-JavaScript-Specific-Software-Development/dp/0321812182" target="_blank" rel="noopener noreferrer">Effective JavaScript</a></li>
+            <li><a href="https://www.amazon.com/Rediscovering-JavaScript-Master-ES6-ES7/dp/1680505467" target="_blank" rel="noopener noreferrer">Rediscovering JavaScript</a></li>
+          </ul>
+        </div>
+        <di class="appsAndTools">
+          <h3 class="mb-3 text-2xl text-extend-brand-appleBlue font-medium">Apps & Tools</h3>
+          <ul class="space-y-2 dark:text-extend-brand-favWhite">      
+            <li><a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">VSCode</a></li>
+            <li><a href="https://tableplus.com" target="_blank" rel="noopener noreferrer">Table Plus</a></li>
+            <li><a href="https://insomnia.rest" target="_blank" rel="noopener noreferrer">Insomnia</a></li>
+            <li><a href="https://runjs.app" target="_blank" rel="noopener noreferrer">RunJS</a></li>
+            <li><a href="https://www.sketch.com" target="_blank" rel="noopener noreferrer">Sketch</a></li>
+            <li><a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">Figma</a></li>
+          </ul>
+        </di>
+      </div>
+    </div>
+    <footer class="text-center mt-24 mb-4 text-extend-brand-favDarkerGray">
+      <a href="https://twitter.com/brandonleichty" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> @brandonleichty</a>
+    </footer>
+    <script src="https://kit.fontawesome.com/723a625d08.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
