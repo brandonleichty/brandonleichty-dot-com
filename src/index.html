@@ -4,8 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script> 
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
     <link rel="stylesheet" href="style.css" />
     <title>Brandon Leichty</title>
   </head>
-  <body></body>
+  <body class="bg-extend-brand-favWhite dark:bg-extend-brand-navy px-8 py-12">
+    <header class="mx-auto max-w-3xl">
+      <div class="text-right">		
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+          <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><path id="svgToggle" fill="#8f8f8f" d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+            c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+            c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+            s76.47-9.802,110.065-29.407c33.585-19.602,60.183-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+            C438.533,179.485,428.732,142.795,409.133,109.203z M219.27,374.579c-28.171,0-54.152-6.943-77.943-20.844
+            c-23.789-13.895-42.633-32.743-56.527-56.527c-13.897-23.791-20.843-49.772-20.843-77.945c0-28.171,6.949-54.152,20.843-77.943
+            c13.891-23.791,32.738-42.637,56.527-56.531c23.791-13.894,49.772-20.841,77.943-20.841V374.579z"/></svg>
+        </button>
+        <img class="h-40 w-40 sm:h-80 sm:w-80 mx-auto" src="images/JavaScriptMemoji.png" alt="">
+        <h1 class="mt-5 sm:mt-5 mb-5 text-5xl sm:text-7xl font-custom font-extrabold text-extend-brand-favLightGray dark:text-extend-brand-favWhite text-center">
+          Hi, I'm Brandon.
+        </h1>
+        <div class="mb-10 sm:mb-24">
+          <p class="text-lg sm:text-2xl text-center text-extend-brand-favDarkerGray">
+            This site is currently under construction. I'm actively working on updating it,
+            so check back soon. In the meantime, check out some of my favorite <span class="text-extend-brand-appleBlue font-semibold"><a href="/resources">web resources!</a></span>
+          </p>
+        </div>
+    </header>
+    <footer class="text-center mt-24 mb-4 text-extend-brand-favDarkerGray">
+      <!-- <a href="https://twitter.com/brandonleichty" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> @brandonleichty</a> -->
+    </footer>
+    <script src="https://kit.fontawesome.com/723a625d08.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
