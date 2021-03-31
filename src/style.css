@@ -35,4 +35,26 @@
   font-weight: 500;
 }
 
+.grid-container li:hover::before {
+  content: "👉";
+}
+.tutorialSites li:hover {
+  color: #5EBD3E;
+}
+.youTubeChannels li:hover {
+  color: #FFB900;
+}
+.designInspiration li:hover {
+  color: #F78200;
+}
+.otherResources li:hover {
+  color: #E23838;
+}
+.books li:hover {
+  color: #973999;
+}
+.appsAndTools li:hover {
+  color: #009CDF;
+}
+
 @tailwind utilities;
