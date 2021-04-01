@@ -20,9 +20,11 @@ toggle.addEventListener('click', () => {
 const memoji = document.getElementById('memoji');
 
 memoji.addEventListener('click', () => {
+  const rect = memoji.getBoundingClientRect();
   confetti({
     particleCount: 100,
     spread: 70,
-    origin: { y: 0.52 }
+    // 0.603125 is where the lid of the MacBook is located
+    origin: { y: ((rect.y + (rect.height * 0.603125)) / window.innerHeight)}
   });
 });
