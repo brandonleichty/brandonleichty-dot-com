@@ -23,7 +23,7 @@ toggle.addEventListener('click', () => {
 
 const memoji = document.getElementById('memoji');
 
-memoji.addEventListener('click', () => {
+const shootConfetti = () => {
   const rect = memoji.getBoundingClientRect();
   confetti({
     particleCount: 100,
@@ -31,4 +31,11 @@ memoji.addEventListener('click', () => {
     // 0.603125 is where the lid of the MacBook is located
     origin: { y: ((rect.y + (rect.height * 0.603125)) / window.innerHeight)}
   });
-});
+}
+
+memoji.addEventListener('click', shootConfetti);
+
+if (!sessionStorage.previousSiteVisit) {
+  setTimeout(shootConfetti, 6000);
+  sessionStorage.previousSiteVisit = true
+}
