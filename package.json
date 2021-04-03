@@ -4,7 +4,7 @@
   "description": "My personal website. Currently built using plain html, vanilla JS, and Tailwind CSS.",
   "main": "index.js",
   "scripts": {
-    "start": "snowpack dev",
+    "start": "NODE_ENV=development TAILWIND_MODE=watch snowpack dev",
     "build": "snowpack build"
   },
   "repository": {
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/brandonleichty/brandonleichty-dot-com#readme",
   "devDependencies": {
     "@snowpack/plugin-postcss": "^1.2.1",
+    "@tailwindcss/jit": "^0.1.18",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.8",
     "postcss-cli": "^8.3.1",
