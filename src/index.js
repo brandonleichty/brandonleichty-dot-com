@@ -1,17 +1,21 @@
-
 // Need to revisit event bubbling in JavaScript
 
 const toggle = document.getElementById('dark-mode-toggle');
-const svg = document.getElementById('svgToggle')
+const moon = document.getElementById('moon')
+const sun = document.getElementById('sun')
 
 toggle.addEventListener('click', () => {
   console.log('CLICKED')
   if(document.documentElement.classList.contains('dark')){
     document.documentElement.classList.remove('dark')
     localStorage.theme = 'light'
+    moon.style.display = "block";
+    sun.style.display = "none";
   } else {
     document.documentElement.classList.add('dark')
     localStorage.theme = 'dark'
+    moon.style.display = "none";
+    sun.style.display = "block";
   }
 });
 
