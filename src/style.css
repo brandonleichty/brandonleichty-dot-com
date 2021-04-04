@@ -57,4 +57,16 @@
   color: #009CDF;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.outer-wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
 @tailwind utilities;

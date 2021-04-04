@@ -29,30 +29,35 @@
     <title>Brandon Leichty</title>
   </head>
   <body class="bg-extend-brand-favWhite dark:bg-extend-brand-navy px-8 py-8 sm:py-12 transition-colors">
-    <header class="mx-auto max-w-3xl">
-      <div class="h-[40px] flex justify-end">
-        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Dark mode toggle">
-          <svg id="sun" style="display: none;" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#8f8f8f">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-          </svg>
-          <svg id="moon" style="display: none;" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#8f8f8f">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-          </svg>
-        </button>
-      </div>
-        <img id="memoji" class="mt-4 h-40 w-40 sm:h-80 sm:w-80 mx-auto" src="images/JavaScriptMemoji.png" alt="">
-        <h1 class="mt-5 sm:mt-5 mb-5 text-4xl sm:text-7xl font-custom font-extrabold text-extend-brand-favLightGray dark:text-extend-brand-favWhite text-center">
-          Hi, I'm Brandon.
-        </h1>
-        <div class="mb-10 sm:mb-24">
-          <p class="text-lg sm:text-2xl text-center text-extend-brand-favDarkerGray">
-            This site is currently under construction. I'm actively working on updating it,
-            so check back soon. In the meantime, check out some of my favorite <span class="text-extend-brand-appleBlue font-semibold"><a href="/resources">web&nbsp;resources!</a></span>
-          </p>
-    </header>
-    <footer class="text-center mt-24 mb-4 text-extend-brand-favDarkerGray">
-      <!-- <a href="https://twitter.com/brandonleichty" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> @brandonleichty</a> -->
-    </footer>
+    <div class="outer-wrapper">
+      <header class="mx-auto max-w-3xl">
+        <div class="h-[40px] flex justify-end">
+          <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Dark mode toggle">
+            <svg id="sun" style="display: none;" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#8f8f8f">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <svg id="moon" style="display: none;" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#8f8f8f">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+        </div>
+          <img id="memoji" class="mt-4 h-40 w-40 sm:h-80 sm:w-80 mx-auto" src="images/JavaScriptMemoji.png" alt="">
+          <h1 class="mt-5 sm:mt-5 mb-5 text-4xl sm:text-7xl font-custom font-extrabold text-extend-brand-favLightGray dark:text-extend-brand-favWhite text-center">
+            Hi, I'm Brandon.
+          </h1>
+          <div class="mb-10 sm:mb-24">
+            <p class="text-lg sm:text-2xl text-center text-extend-brand-favDarkerGray">
+              This site is currently under construction. I'm actively working on updating it,
+              so check back soon. In the meantime, check out some of my favorite <span class="text-extend-brand-appleBlue font-semibold"><a href="/resources">web&nbsp;resources!</a></span>
+            </p>
+      </header>
+      <main>
+
+      </main>
+      <footer class="text-center mt-24 mb-4 text-extend-brand-favDarkerGray">
+        <a href="https://twitter.com/brandonleichty" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> @brandonleichty</a>
+      </footer>
+    </div>
     <script>
       if (localStorage.theme === 'dark') {
         moon.style.display = "none";
