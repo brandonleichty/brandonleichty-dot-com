@@ -8,6 +8,8 @@
     <meta name="description" content="Brandon Leichty's portfolio site.">
     <meta name="author" content="Brandon Leichty">
 
+    <link rel="stylesheet" href="style.css" />
+    
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
@@ -18,6 +20,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+    <link rel="prefetch" href="./resources.html" as="document">
     <script> 
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
@@ -25,7 +28,6 @@
         document.documentElement.classList.remove('dark');
       }
     </script>
-    <link rel="stylesheet" href="style.css" />
     <title>Brandon Leichty</title>
   </head>
   <body class="bg-extend-brand-favWhite dark:bg-extend-brand-navy px-8 py-8 sm:py-12 transition-colors">
