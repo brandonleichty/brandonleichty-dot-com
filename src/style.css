@@ -34,6 +34,13 @@
   font-style: normal;
   font-weight: 500;
 }
+@font-face {
+  font-family: "Bogue";
+  src: url("fonts/BogueExtrabold/font.woff2") format("woff2"),
+    url("fonts/BogueExtrabold/font.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
 
 .grid-container li:hover::before {
   content: "👉";
