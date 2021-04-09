@@ -86,7 +86,7 @@ html, body {
 
 .footer-wrapper {
   padding-top: 100px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 @tailwind utilities;
