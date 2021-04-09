@@ -4,8 +4,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        extend: {
-          brand: {
             favPink: "#f02e65",
             favWhite: "#ffffff",
             favLightGray: "#40404c",
@@ -16,10 +14,13 @@ module.exports = {
             appleRed: "#E23838",
             applePurple: "#973999",
             appleBlue: "#009CDF",
+            darkPurple: "#221a23",
             navy: "#111827",
-          },
-        },
       },
+      fontFamily: {
+        gilroy: ["Gilroy"],
+        bogue: ["Bogue"]
+        }
     },
   },
 
