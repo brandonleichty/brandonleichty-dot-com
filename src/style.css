@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/GilroyLight/font.woff2") format("woff2"),
+  src: url("fonts/GilroyBold/font.woff2") format("woff2"),
     url("fonts/GilroyBold/font.woff") format("woff");
   font-style: normal;
   font-weight: 700;
@@ -19,6 +19,8 @@
   font-family: "Gilroy";
   src: url("fonts/GilroySemiBold/font.woff2") format("woff2"),
     url("fonts/GilroySemiBold/font.woff") format("woff");
+    font-style: normal;
+  font-weight: 600;
 }
 @font-face {
   font-family: "Gilroy";
@@ -26,6 +28,12 @@
     url("fonts/GilroyLight/font.woff") format("woff");
   font-style: normal;
   font-weight: 300;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/GilroyRegular/font.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: "Gilroy";
@@ -78,7 +86,7 @@ html, body {
 
 .footer-wrapper {
   padding-top: 100px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 @tailwind utilities;
