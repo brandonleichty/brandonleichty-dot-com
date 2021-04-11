@@ -21,7 +21,8 @@ module.exports = {
       },
       fontFamily: {
         gilroy: ["Gilroy"],
-        bogue: ["Bogue"]
+        bogue: ["Bogue"],
+        recoleta: ["Recoleta"]
         }
     },
   },
