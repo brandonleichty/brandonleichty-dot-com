@@ -16,6 +16,7 @@ module.exports = {
             appleBlue: "#009CDF",
             darkPurple: "#221a23",
             darkPurple2: "#1b0525",
+            teal: "#03cffe",
             navy: "#111827",
       },
       fontFamily: {
